@@ -6,7 +6,38 @@ CHILL
   institution={Citeseer}
 }
 
-OPENTUNER
+
+GENERAL AUTOTUNING
+
+@article{basu2013towards,
+  title={Towards making autotuning mainstream},
+  author={Basu, Protonu and Hall, Mary and Khan, Malik and Maindola, Suchit and Muralidharan, Saurav and Ramalingam, Shreyas and Rivera, Axel and Shantharam, Manu and Venkat, Anand},
+  journal={International Journal of High Performance Computing Applications},
+  volume={27},
+  number={4},
+  pages={379--393},
+  year={2013},
+  publisher={Sage Publications}
+}
+
+@inproceedings{tiwari2009scalable,
+  title={A scalable auto-tuning framework for compiler optimization},
+  author={Tiwari, Ananta and Chen, Chun and Chame, Jacqueline and Hall, Mary and Hollingsworth, Jeffrey K},
+  booktitle={Parallel \& Distributed Processing, 2009. IPDPS 2009. IEEE International Symposium on},
+  pages={1--12},
+  year={2009},
+  organization={IEEE}
+}
+
+@inproceedings{hartono2009annotation,
+  title={Annotation-based empirical performance tuning using Orio},
+  author={Hartono, Albert and Norris, Boyana and Sadayappan, Ponnuswamy},
+  booktitle={Parallel \& Distributed Processing, 2009. IPDPS 2009. IEEE International Symposium on},
+  pages={1--11},
+  year={2009},
+  organization={IEEE}
+}
+
 @inproceedings{ansel2014opentuner,
   title={Opentuner: An extensible framework for program autotuning},
   author={Ansel, Jason and Kamil, Shoaib and Veeramachaneni, Kalyan and Ragan-Kelley, Jonathan and Bosboom, Jeffrey and O'Reilly, Una-May and Amarasinghe, Saman},
@@ -16,15 +47,67 @@ OPENTUNER
   organization={ACM}
 }
 
-GENERAL AUTOTUNING
 
-@inproceedings{tiwari2009scalable,
-  title={A scalable auto-tuning framework for compiler optimization},
-  author={Tiwari, Ananta and Chen, Chun and Chame, Jacqueline and Hall, Mary and Hollingsworth, Jeffrey K},
-  booktitle={Parallel \& Distributed Processing, 2009. IPDPS 2009. IEEE International Symposium on},
-  pages={1--12},
-  year={2009},
-  organization={IEEE}
+DOMAIN SPECIFIC AUTOTUNING LIBRARIES
+
+@inproceedings{bilmes2014optimizing,
+  title={Optimizing matrix multiply using PHiPAC: a portable, high-performance, ANSI C coding methodology},
+  author={Bilmes, Jeff and Asanovic, Krste and Chin, Chee-Whye and Demmel, Jim},
+  booktitle={25th Anniversary International Conference on Supercomputing Anniversary Volume},
+  pages={253--260},
+  year={2014},
+  organization={ACM}
+}
+
+@inproceedings{whaley1998automatically,
+  title={Automatically tuned linear algebra software},
+  author={Whaley, R Clint and Dongarra, Jack J},
+  booktitle={Proceedings of the 1998 ACM/IEEE conference on Supercomputing},
+  pages={1--27},
+  year={1998},
+  organization={IEEE Computer Society}
+}
+
+@article{frigo2005design,
+  title={The design and implementation of FFTW3},
+  author={Frigo, Matteo and Johnson, Steven G},
+  journal={Proceedings of the IEEE},
+  volume={93},
+  number={2},
+  pages={216--231},
+  year={2005},
+  publisher={IEEE}
+}
+
+@incollection{im2001optimizing,
+  title={Optimizing sparse matrix computations for register reuse in SPARSITY},
+  author={Im, Eun-Jin and Yelick, Katherine},
+  booktitle={Computational Science—ICCS 2001},
+  pages={127--136},
+  year={2001},
+  publisher={Springer}
+}
+
+@article{puschel2004spiral,
+  title={Spiral: A generator for platform-adapted libraries of signal processing alogorithms},
+  author={P{\"u}schel, Markus and Moura, Jos{\'e} MF and Singer, Bryan and Xiong, Jianxin and Johnson, Jeremy and Padua, David and Veloso, Manuela and Johnson, Robert W},
+  journal={International Journal of High Performance Computing Applications},
+  volume={18},
+  number={1},
+  pages={21--45},
+  year={2004},
+  publisher={SAGE Publications}
+}
+
+@inproceedings{vuduc2005oski,
+  title={OSKI: A library of automatically tuned sparse matrix kernels},
+  author={Vuduc, Richard and Demmel, James W and Yelick, Katherine A},
+  booktitle={Journal of Physics: Conference Series},
+  volume={16},
+  number={1},
+  pages={521},
+  year={2005},
+  organization={IOP Publishing}
 }
 
 
@@ -76,4 +159,40 @@ MULTIGRID
 }
 
 
+STENCIL DSLs
+@inproceedings{christen2011patus,
+  title={Patus: A code generation and autotuning framework for parallel iterative stencil computations on modern microarchitectures},
+  author={Christen, Matthias and Schenk, Olaf and Burkhart, Helmar},
+  booktitle={Parallel \& Distributed Processing Symposium (IPDPS), 2011 IEEE International},
+  pages={676--687},
+  year={2011},
+  organization={IEEE}
+}
+
+@inproceedings{henretty2013stencil,
+  title={A stencil compiler for short-vector SIMD architectures},
+  author={Henretty, Tom and Veras, Richard and Franchetti, Franz and Pouchet, Louis-No{\"e}l and Ramanujam, J and Sadayappan, P},
+  booktitle={Proceedings of the 27th international ACM conference on International conference on supercomputing},
+  pages={13--24},
+  year={2013},
+  organization={ACM}
+}
+
+@inproceedings{tang2011pochoir,
+  title={The pochoir stencil compiler},
+  author={Tang, Yuan and Chowdhury, Rezaul Alam and Kuszmaul, Bradley C and Luk, Chi-Keung and Leiserson, Charles E},
+  booktitle={Proceedings of the twenty-third annual ACM symposium on Parallelism in algorithms and architectures},
+  pages={117--128},
+  year={2011},
+  organization={ACM}
+}
+
+@inproceedings{maruyama2011physis,
+  title={Physis: an implicitly parallel programming model for stencil computations on large-scale GPU-accelerated supercomputers},
+  author={Maruyama, Naoya and Nomura, Tatsuo and Sato, Kento and Matsuoka, Satoshi},
+  booktitle={High Performance Computing, Networking, Storage and Analysis (SC), 2011 International Conference for},
+  pages={1--12},
+  year={2011},
+  organization={IEEE}
+}
 
